@@ -16,7 +16,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eg
 ## Work Accomplished
 Document your work done to accomplish the outcome
 
-The work that I have done to accomplish the outcome involves the usage of the highly popular programming language, Python, to achieve my objective and hence, our business goal. Python, being highly versatile, enables the usage of libraries like numpy, pandas, and scikit-learn to provide indispensable assistance when it comes to analysing data, as well as programming. To outline the amount of work I have accomplished during the duration of this project, as well as applying what I have learnt during the duration of this course, I contributed to the achievement of my objective via Data Preparation, which is the process of transforming raw data into a clean, consistent and usable format for analysis and other downstream tasks like machine learning. Following that, I conducted Modelling, which is the process of creating a visual representation of hwo datat is structured and related within a system.  Following that, evaluation, as well as recommendations and analysis will be provided, and the issue of AI Ethics will also be explored.The subsequent sections will go through all of these in detail.
+The work that I have done to accomplish the outcome involves the usage of the highly popular programming language, Python, to achieve my objective and hence, our business goal. Python, being highly versatile, enables the usage of libraries like numpy, pandas, and scikit-learn to provide indispensable assistance when it comes to analysing data, as well as programming. To outline the amount of work I have accomplished during the duration of this project, as well as applying what I have learnt during the duration of this course, I contributed to the achievement of my objective via Data Preparation, which is the process of transforming raw data into a clean, consistent and usable format for analysis and other downstream tasks like machine learning. Following that, I conducted Modelling, which is the process of creating a visual representation of how data is structured and related within a system.  Following that, evaluation, as well as recommendations and analysis will be provided, and the issue of AI Ethics will also be explored.The subsequent sections will go through all of these in detail.
 
 ### Data Preparation
 When it came to preparing the data, I noticed that there were several variables that could be considered unique identifiers rather than features with meaningful information. Unique identifiers are highly important in the real world, especially when it comes to retrieving data. However, when it comes to analysing data, unique identifiers are usually removed before modelling as there are privacy issues involved, and especially to prevent overfitting of data. They usually have values that cannot be found in the rest of the dataset. These variables that I determined were unique identifiers were id, title, backdrop_path, homepage, imdb_id, original_title, poster_path and poster_link. I removed these variables accordingly.
@@ -91,10 +91,48 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eg
 ## Recommendation and Analysis
 Explain the analysis and recommendations
 
+It is clear from the Champion Model (Random Forest) that most of the the variables that I had selected for the purpose of modelling are relevant (0.89).
+
+Going through all of my selected variables, I would say that vote_count has to be highly important, as more votes provide a more accurate vote average/movie score.
+
+Revenue is a little bit different, as it is possible for low-rated films to have high revenue and high-rated films to have low revenue. However, most of the time, a high revenue indicates a higher movie score.
+
+A longer runtime is usually indicative of a movie with a lot content, and usually indicates a higher movie score. However, the caveat is that certain movies with less runtime, such as animated films suitable for children, can be extremely highly rated.
+
+Adult-rated movies are typically watched less than movies suitable for all audiences. Therefore, vote count, and hence vote average/movie score, may be affected.
+
+A higher budget usually indicates a greater movie score, as it means that more effort has been put into making the movie. However, this is not always the case as there are several movies that have high budgets but are poorly-rated, while there are those that have low budgets but are highly-rated.
+
+Popularity should be a significant factor in movie ratings. Usually, movies of higher popularity have higher movie scores.
+
+The release year can be a factor in movie scores. For example, nostalgia can lead to older movies having higher scores, while brand new blockbusters can also contribute to higher scores due to anticipation.
+
+Usually, a positive overview sentiment would contribute to a higher movie rating. This should be self-explanatory.
+
+A movie that is made in a highly-spoken language such as English or Chinese would contribute to more vote counts, and hence, contribute more to the vote average.
+
+These days, major production companies such as Universal Studios and Disney have the lion's share of good movies. This is not always the case though, as independent films, while not as successful at the box office, can be seen as works of art and can be highly rated by viewers.
+
+Genre can be a significant factor in movie ratings. Movies of popular genres like romance, comedy, action and fantasy tend to do well among viewers.
+
+Cast list can be another significant factor in movie ratings. Usually, popular movie stars tend to produce movies that are more highly rated due to their clout, resulting from good past performances. However, up-and-coming movie stars that have not been seen by most viewers has to be taken into consideration.
+
+All in all, a movie that I would suggest to improve critical reception would have to be one that has many vote counts, a higher revenue, longer runtime, suitable for all ages, higher budget, can achieve higher popularity, be a blockbuster akin to a classic (maybe a long-awaited sequel?), a positive overview sentiment, be of a highly-spoken langauge, be made by famous production companies, be of a popular genre, as well as starring popular cast members.
+
+
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ## AI Ethics
 Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
+
+Privacy and fairness issues can stem from using the data of so many movies made by large production companies, and even by smaller production companies. It is possible that such production companies, despite most of their information being voluntarily public, do not want to be subject to algorithms related to AI and Data Analytics. It could trivialise their data as being "just numbers" that determine which movie is going to bad or good, which movie is going to be poorly or highly rated, which movie is or is not going to have greater revenue. As a result, data can be misused and cause biasness. Production companies may only choose to hire more famous cast members, directors, producers etc., and may cause less famous individuals to lose jobs and opportunities.
+
+As I have deduced from our dataset as a whole, there are several errors and incomplete data that cannot be reconciled by imputing or removal of entire variables. These errors were most likely caused by humans. When fed into AI or Machine Learning algorithms, it is possible that there may be highly erroneous results that impact the accuracy of projects that attempt to determine the success of films. This particular dataset is also highly concerning as it is a popular dataset used by several data analysts. As they say, "Garbage in, garbage out", and AI being trained on such inaccurate data may be detrimental to the movie industry.
+
+Accountability may also be an issue, as AI engineers and data analysts who use the dataset may be anonymous, and movie production companies may not want their data to be misused for potentially nefarious means, despite their data being public. Inaccurate data can be twisted to form inaccurate views of the movie industry, which could be detrimental to the industry as a whole.
+
+Transparency might be an issue, as the presence, or lack of presence of data seen in the dataset could indicate that there are several production companies that do not want their data to be made too public, even though most of it should be public information. Perhaps this is a misinterpretation of mine. However, if true, it could impact AI development, as AI requires huge amounts of data to train on, and a lack of data can lead to inefficient AI.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
