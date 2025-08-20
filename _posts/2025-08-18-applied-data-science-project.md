@@ -11,8 +11,6 @@ The dataset that we are utilising is the IMDB TMDB Movie Metadata Big Dataset, w
 
 My team's project business goal is to maximise the commercial and critical success of upcoming film productions by leveraging historical movie data by increasing revenue by 5%. Objective 1, which is conducted by our group leader, Kelvin, is to predict the box office revenue. Objective 2, which is my main objective, is to predict user rating or critical reception, which can be gleaned from the vote average. Objective 3 is pursued by Shir Min, who is predicting sentiments for new movies. Objective 4, which is overseen by Roger, is to predict commercial success class or blockbuster classification.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
 ## Work Accomplished
 Document your work done to accomplish the outcome
 
@@ -40,8 +38,6 @@ The following image was the final Correlation Matrix that I had obtained from my
 
 As seen from the matrix, most of the variables were not highly correlated (>0.8) with each other. Hence. I decided to retain all of these variables listed on the matrix.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
 ### Modelling
 When it came to modelling, I decided to use 1 White Box model and 2 Black Box Models that are reliable in handling tasks like these. The White Box model that I employed was the Lasso Regression, while the Black Box models that I employed were the Random Forest and the Support Vector Machine.
 
@@ -56,8 +52,6 @@ Support Vector Machine (SVM) is a supervised machine learning algorithm used for
 <img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/01158ac0-f81c-43f5-b0ee-60fd925f8d05" />
 
 The next section, "Evaluation", will detail the results that I have obtained from running the models on my dataset.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ### Evaluation
 When it comes to evaluating the models that I chose, Python provided me with the following results, as pertains to Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), as well as Coefficient of Determination (R-Squared).
@@ -83,10 +77,6 @@ As can be seen from the table, the Random Forest is the clear Champion Model as 
 When it comes to ranking the importances of the features within the Random Forest, it is clear that vote_count highly influences my target variable of vote_average.
 
 <img width="790" height="620" alt="image" src="https://github.com/user-attachments/assets/16b90e10-965d-4312-b974-2e74a149f6cd" />
-
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ## Recommendation and Analysis
 Explain the analysis and recommendations
@@ -119,10 +109,6 @@ Cast list can be another significant factor in movie ratings. Usually, popular m
 
 All in all, a movie that I would suggest to improve critical reception would have to be one that has many vote counts, a higher revenue, longer runtime, suitable for all ages, higher budget, can achieve higher popularity, be a blockbuster akin to a classic (maybe a long-awaited sequel?), a positive overview sentiment, be of a highly-spoken langauge, be made by famous production companies, be of a popular genre, as well as starring popular cast members.
 
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
 ## AI Ethics
 Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
 
@@ -133,8 +119,6 @@ As I have deduced from our dataset as a whole, there are several errors and inco
 Accountability may also be an issue, as AI engineers and data analysts who use the dataset may be anonymous, and movie production companies may not want their data to be misused for potentially nefarious means, despite their data being public. Inaccurate data can be twisted to form inaccurate views of the movie industry, which could be detrimental to the industry as a whole.
 
 Transparency might be an issue, as the presence, or lack of presence of data seen in the dataset could indicate that there are several production companies that do not want their data to be made too public, even though most of it should be public information. Perhaps this is a misinterpretation of mine. However, if true, it could impact AI development, as AI requires huge amounts of data to train on, and a lack of data can lead to inefficient AI.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
