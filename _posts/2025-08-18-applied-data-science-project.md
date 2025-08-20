@@ -43,11 +43,49 @@ As seen from the matrix, most of the variables were not highly correlated (>0.8)
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ### Modelling
+When it came to modelling, I decided to use 1 White Box model and 2 Black Box Models that are reliable in handling tasks like these. The White Box model that I employed was the Lasso Regression, while the Black Box models that I employed were the Random Forest and the Support Vector Machine.
 
+Lasso Regression is a type of linear regression model that performs both regularisation and variable selection to improve prediction accuracy and model interpretability.
+
+Random Forest is a powerful machine learning algorithm that uses an ensemble of decision trees to make a decision, and is usually sufficient for modelling.
+
+<img width="1772" height="1181" alt="image" src="https://github.com/user-attachments/assets/6e1df4b4-f0e1-4a49-8980-688504c823d4" />
+
+Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification and regression tasks. When the number of dimensions is high, especially in this case, SVM can be highly useful in finding an optimal hyperplane that best separates data points into different classes.
+
+<img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/01158ac0-f81c-43f5-b0ee-60fd925f8d05" />
+
+The next section, "Evaluation", will detail the results that I have obtained from running the models on my dataset.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ### Evaluation
+When it comes to evaluating the models that I chose, Python provided me with the following results, as pertains to Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), as well as Coefficient of Determination (R-Squared).
+
+For RMSE, large errors are penalised more than small ones because of the squaring, and should be used if big mistakes are very costly. In general, the lower the RMSE, the better.
+
+<img width="322" height="97" alt="image" src="https://github.com/user-attachments/assets/3ecc1905-181c-4f59-8030-196e8ccb83f0" />
+
+FOR MAE, the average absolute difference between predicted and actual values is calculated, and should be used when we want a robust, easy-to-interpret-metric. Also, it is less sensitive to outliers compared to RMSE. In general, the lower the MAE, the better.
+
+<img width="277" height="84" alt="image" src="https://github.com/user-attachments/assets/cc608b0e-e62b-407d-bd04-7151604fa0cb" />
+
+For R-Squared, the proportion of variance in the target explained by the model is calculated, and is known as the overall "goodness of fit". In general, an R-Squared value of 1 indicates a perfect prediction or a perfect fit to the model, while an R-Squared value of 0 indicates that the model explains none of the variability in the dependent variable. An R-Squared value of -1 is the opposite of an R-Squared value of 1 and is generally impossible. 
+
+<img width="182" height="76" alt="image" src="https://github.com/user-attachments/assets/6e031082-ab46-414d-bff7-473317e7efd0" />
+
+The following table are the results of my Evaluation:
+
+<img width="928" height="144" alt="image" src="https://github.com/user-attachments/assets/6035331b-9a9f-4047-a3b4-826dcfdeb55e" />
+
+As can be seen from the table, the Random Forest is the clear Champion Model as it has the lowest RMSE and MAE, as well as the highest R-Squared value among the 3 models.
+
+When it comes to ranking the importances of the features within the Random Forest, it is clear that vote_count highly influences my target variable of vote_average.
+
+<img width="790" height="620" alt="image" src="https://github.com/user-attachments/assets/16b90e10-965d-4312-b974-2e74a149f6cd" />
+
+
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ## Recommendation and Analysis
