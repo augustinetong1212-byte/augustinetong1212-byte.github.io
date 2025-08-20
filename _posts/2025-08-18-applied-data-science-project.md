@@ -14,7 +14,7 @@ My team's project business goal is to maximise the commercial and critical succe
 ## Work Accomplished
 Document your work done to accomplish the outcome
 
-The work that I have done to accomplish the outcome involves the usage of the highly popular programming language, Python, to achieve my objective and hence, our business goal. Python, being highly versatile, enables the usage of libraries like numpy, pandas, and scikit-learn to provide indispensable assistance when it comes to analysing data, as well as programming. To outline the amount of work I have accomplished during the duration of this project, as well as applying what I have learnt during the duration of this course, I contributed to the achievement of my objective via Data Preparation, which is the process of transforming raw data into a clean, consistent and usable format for analysis and other downstream tasks like machine learning. Following that, I conducted Modelling, which is the process of creating a visual representation of how data is structured and related within a system.  Following that, evaluation, as well as recommendations and analysis will be provided, and the issue of AI Ethics will also be explored.The subsequent sections will go through all of these in detail.
+The work that I have done to accomplish the outcome involves the usage of the highly popular programming language, Python, to achieve my objective and hence, our business goal. Python, being highly versatile, enables the usage of libraries like numpy, pandas, and scikit-learn to provide indispensable assistance when it comes to analysing data, as well as programming. To outline the amount of work I have accomplished during the duration of this project, as well as applying what I have learnt during the duration of this course, I contributed to the achievement of my objective via Data Preparation, which is the process of transforming raw data into a clean, consistent and usable format for analysis and other downstream tasks like machine learning. Following that, I conducted Modelling, which is the process of creating a visual representation of how data is structured and related within a system.  Following that, evaluation, as well as recommendations and analysis will be provided, and the issue of AI Ethics will also be explored. The subsequent sections will go through all of these in detail.
 
 ### Data Preparation
 When it came to preparing the data, I noticed that there were several variables that could be considered unique identifiers rather than features with meaningful information. Unique identifiers are highly important in the real world, especially when it comes to retrieving data. However, when it comes to analysing data, unique identifiers are usually removed before modelling as there are privacy issues involved, and especially to prevent overfitting of data. They usually have values that cannot be found in the rest of the dataset. These variables that I determined were unique identifiers were id, title, backdrop_path, homepage, imdb_id, original_title, poster_path and poster_link. I removed these variables accordingly.
@@ -35,6 +35,7 @@ Also, categorical variables such as original_language, production_companies, gen
 The following image was the final Correlation Matrix that I had obtained from my list of selected variables.
 
 <img width="1684" height="776" alt="image" src="https://github.com/user-attachments/assets/edc08251-4015-44ef-91b7-6d09f395ddb5" />
+Figure 1: Correlation Matrix
 
 As seen from the matrix, most of the variables were not highly correlated (>0.8) with each other. Hence. I decided to retain all of these variables listed on the matrix.
 
@@ -43,13 +44,21 @@ When it came to modelling, I decided to use 1 White Box model and 2 Black Box Mo
 
 Lasso Regression is a type of linear regression model that performs both regularisation and variable selection to improve prediction accuracy and model interpretability.
 
+<img width="1536" height="964" alt="image" src="https://github.com/user-attachments/assets/245765a8-e863-4ec3-9d4b-4c5b6619c5d2" />
+Figure 2: Lasso Regression
+Source: https://dataaspirant.com/lasso-regression/
+
 Random Forest is a powerful machine learning algorithm that uses an ensemble of decision trees to make a decision, and is usually sufficient for modelling.
 
 <img width="1772" height="1181" alt="image" src="https://github.com/user-attachments/assets/6e1df4b4-f0e1-4a49-8980-688504c823d4" />
+Figure 3: Random Forest
+Source: https://dida.do/what-is-random-forest
 
 Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification and regression tasks. When the number of dimensions is high, especially in this case, SVM can be highly useful in finding an optimal hyperplane that best separates data points into different classes.
 
 <img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/01158ac0-f81c-43f5-b0ee-60fd925f8d05" />
+Figure 4: Support Vector Machine
+Source: https://spotintelligence.com/2024/05/06/support-vector-machines-svm/
 
 The next section, "Evaluation", will detail the results that I have obtained from running the models on my dataset.
 
@@ -77,6 +86,7 @@ As can be seen from the table, the Random Forest is the clear Champion Model as 
 When it comes to ranking the importances of the features within the Random Forest, it is clear that vote_count highly influences my target variable of vote_average.
 
 <img width="790" height="620" alt="image" src="https://github.com/user-attachments/assets/16b90e10-965d-4312-b974-2e74a149f6cd" />
+Figure 5: Comparison of Models
 
 ## Recommendation and Analysis
 Explain the analysis and recommendations
