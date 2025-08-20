@@ -5,15 +5,12 @@ title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
 ## Project Background
-Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
 
 The dataset that we are utilising is the IMDB TMDB Movie Metadata Big Dataset, which will be made available during this project.
 
 My team's project business goal is to maximise the commercial and critical success of upcoming film productions by leveraging historical movie data by increasing revenue by 5%. Objective 1, which is conducted by our group leader, Kelvin, is to predict the box office revenue. Objective 2, which is my main objective, is to predict user rating or critical reception, which can be gleaned from the vote average. Objective 3 is pursued by Shir Min, who is predicting sentiments for new movies. Objective 4, which is overseen by Roger, is to predict commercial success class or blockbuster classification.
 
 ## Work Accomplished
-Document your work done to accomplish the outcome
-
 The work that I have done to accomplish the outcome involves the usage of the highly popular programming language, Python, to achieve my objective and hence, our business goal. Python, being highly versatile, enables the usage of libraries like numpy, pandas, and scikit-learn to provide indispensable assistance when it comes to analysing data, as well as programming. To outline the amount of work I have accomplished during the duration of this project, as well as applying what I have learnt during the duration of this course, I contributed to the achievement of my objective via Data Preparation, which is the process of transforming raw data into a clean, consistent and usable format for analysis and other downstream tasks like machine learning. Following that, I conducted Modelling, which is the process of creating a visual representation of how data is structured and related within a system.  Following that, evaluation, as well as recommendations and analysis will be provided, and the issue of AI Ethics will also be explored. The subsequent sections will go through all of these in detail.
 
 ### Data Preparation
@@ -25,10 +22,9 @@ Following that, I removed certain variables that could be considered to be highl
 
 I also removed the status variable as most of the movies in the dataset have already been released.
 
-Missing and wrong values were also taken care of as follows:
--"runtime" values like "0" and "28" were replaced with the median
--"release_year" null values and dates after 2025 were replaced with the median
--Rows where values of "production_companies" are null were removed
+Missing and wrong values were also taken care of as follows: 1) "runtime" values like "0" and "28" were replaced with the median
+2) "release_year" null values and dates after 2025 were replaced with the median
+3) Rows where values of "production_companies" are null were removed
 
 Also, categorical variables such as original_language, production_companies, genres_list and cast_list were converted to numerical variables for easier modelling within the Python framework.
 
@@ -80,17 +76,16 @@ For R-Squared, the proportion of variance in the target explained by the model i
 The following table are the results of my Evaluation:
 
 <img width="928" height="144" alt="image" src="https://github.com/user-attachments/assets/6035331b-9a9f-4047-a3b4-826dcfdeb55e" />
+Figure 5: Comparison of Models
 
 As can be seen from the table, the Random Forest is the clear Champion Model as it has the lowest RMSE and MAE, as well as the highest R-Squared value among the 3 models.
 
 When it comes to ranking the importances of the features within the Random Forest, it is clear that vote_count highly influences my target variable of vote_average.
 
 <img width="790" height="620" alt="image" src="https://github.com/user-attachments/assets/16b90e10-965d-4312-b974-2e74a149f6cd" />
-Figure 5: Comparison of Models
+Figure 6: Feature Importances of Random Forest
 
 ## Recommendation and Analysis
-Explain the analysis and recommendations
-
 It is clear from the Champion Model (Random Forest) that most of the the variables that I had selected for the purpose of modelling are relevant (0.89).
 
 Going through all of my selected variables, I would say that vote_count has to be highly important, as more votes provide a more accurate vote average/movie score.
@@ -120,8 +115,6 @@ Cast list can be another significant factor in movie ratings. Usually, popular m
 All in all, a movie that I would suggest to improve critical reception would have to be one that has many vote counts, a higher revenue, longer runtime, suitable for all ages, higher budget, can achieve higher popularity, be a blockbuster akin to a classic (maybe a long-awaited sequel?), a positive overview sentiment, be of a highly-spoken langauge, be made by famous production companies, be of a popular genre, as well as starring popular cast members.
 
 ## AI Ethics
-Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
-
 Privacy and fairness issues can stem from using the data of so many movies made by large production companies, and even by smaller production companies. It is possible that such production companies, despite most of their information being voluntarily public, do not want to be subject to algorithms related to AI and Data Analytics. It could trivialise their data as being "just numbers" that determine which movie is going to bad or good, which movie is going to be poorly or highly rated, which movie is or is not going to have greater revenue. As a result, data can be misused and cause biasness. Production companies may only choose to hire more famous cast members, directors, producers etc., and may cause less famous individuals to lose jobs and opportunities.
 
 As I have deduced from our dataset as a whole, there are several errors and incomplete data that cannot be reconciled by imputing or removal of entire variables. These errors were most likely caused by humans. When fed into AI or Machine Learning algorithms, it is possible that there may be highly erroneous results that impact the accuracy of projects that attempt to determine the success of films. This particular dataset is also highly concerning as it is a popular dataset used by several data analysts. As they say, "Garbage in, garbage out", and AI being trained on such inaccurate data may be detrimental to the movie industry.
