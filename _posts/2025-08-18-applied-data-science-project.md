@@ -65,7 +65,7 @@ For RMSE, large errors are penalised more than small ones because of the squarin
 
 <img width="322" height="97" alt="image" src="https://github.com/user-attachments/assets/3ecc1905-181c-4f59-8030-196e8ccb83f0" />
 
-FOR MAE, the average absolute difference between predicted and actual values is calculated, and should be used when we want a robust, easy-to-interpret-metric. Also, it is less sensitive to outliers compared to RMSE. In general, the lower the MAE, the better.
+For MAE, the average absolute difference between predicted and actual values is calculated, and should be used when we want a robust, easy-to-interpret-metric. Also, it is less sensitive to outliers compared to RMSE. In general, the lower the MAE, the better.
 
 <img width="277" height="84" alt="image" src="https://github.com/user-attachments/assets/cc608b0e-e62b-407d-bd04-7151604fa0cb" />
 
@@ -110,7 +110,7 @@ These days, major production companies such as Universal Studios and Disney have
 
 Genre can be a significant factor in movie ratings. Movies of popular genres like romance, comedy, action and fantasy tend to do well among viewers.
 
-Cast list can be another significant factor in movie ratings. Usually, popular movie stars tend to produce movies that are more highly rated due to their clout, resulting from good past performances. However, up-and-coming movie stars that have not been seen by most viewers has to be taken into consideration.
+Cast list can be another significant factor in movie ratings. Usually, popular movie stars tend to produce movies that are more highly rated due to their clout, resulting from good past performances. However, up-and-coming movie stars that have not been seen by most viewers have to be taken into consideration.
 
 All in all, a movie that I would suggest to improve critical reception would have to be one that has many vote counts, a higher revenue, longer runtime, suitable for all ages, higher budget, can achieve higher popularity, be a blockbuster akin to a classic (maybe a long-awaited sequel?), a positive overview sentiment, be of a highly-spoken langauge, be made by famous production companies, be of a popular genre, as well as starring popular cast members.
 
