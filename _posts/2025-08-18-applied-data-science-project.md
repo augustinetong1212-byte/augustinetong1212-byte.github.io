@@ -124,6 +124,7 @@ Accountability may also be an issue, as AI engineers and data analysts who use t
 Transparency might be an issue, as the presence, or lack of presence of data seen in the dataset could indicate that there are several production companies that do not want their data to be made too public, even though most of it should be public information. Perhaps this is a misinterpretation of mine. However, if true, it could impact AI development, as AI requires huge amounts of data to train on, and a lack of data can lead to inefficient AI.
 
 ## Source Codes and Datasets
-Upload your model files and dataset into a GitHub repo and add the link here. 
-https://github.com/augustinetong1212-byte/itd214_proj
+Upload your model files and dataset into a GitHub repo and add the link here.
+PLEASE TAKE NOTE THAT THE FOLLOWING LINE HAS 2 LINKS
+https://github.com/augustinetong1212-byte/itd214_proj (TEXT IN BETWEEN LINKS FOR CLARIFICATION)
 https://drive.google.com/file/d/1sP2ZqElD-JEZI7GmhuOLWH8rmYz0iN5k/view?usp=drive_link
